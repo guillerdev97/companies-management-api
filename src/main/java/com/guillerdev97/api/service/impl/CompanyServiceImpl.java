@@ -21,4 +21,9 @@ public class CompanyServiceImpl implements CompanyService {
     public List<Company> getCompanies() {
         return companyRepository.findAll();
     }
+
+    @Override
+    public Company findCompanyById(Long companyId) {
+        return companyRepository.findCompanyById(companyId);
+    }
 }
